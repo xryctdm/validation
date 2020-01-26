@@ -23,15 +23,15 @@
                         <input class="form__input" type="text" name="name" minlength="2" maxlength="20" pattern="[А-ЯЁ][а-яё]+\-?([А-ЯЁ][а-яё]+)?" placeholder="Имя" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="name" pattern="" placeholder="E-Mail" />
+                        <input class="form__input" type="email" name="name" pattern=".\w.+@.\w.+\.\w+" placeholder="E-Mail" />
                         <span class="form__error">e-mail в формате: sega@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="name" placeholder="Телефон" pattern="" minlength="" maxlength="" />
+                        <input class="form__input" type="tel" name="name" placeholder="Телефон" pattern="((\+7)|8)(\(\d{3,}\))? ?(\d{3,10})|(\-\d{2,3}\-\d{2,})\-?\d{0,2}" minlength="" maxlength="" />
                         <span class="form__error">телефон в формате: +7 (123) 456-78-90</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="url" name="name" pattern="" placeholder="Ваш сайт" />
+                        <input class="form__input" type="url" name="name" pattern="http(s?):\/\/(www\.)?|((\d{0,3}.){4,}|\w+.\w+)(:\d{2,5})?(\/.)*" placeholder="Ваш сайт" />
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="submit">Отправить</button>
